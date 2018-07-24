@@ -1,0 +1,60 @@
+{
+  "name": "webpack-demo",
+  "version": "1.2.0",
+  "description": "webpack 4 (legato) demo app",
+  "main": "index.js",
+  "scripts": {
+    "default:dev": "npm run clean && webpack --mode development",
+    "default:prod": "npm run clean && webpack --mode production",
+    "build:dev": "npm run clean && webpack --mode development",
+    "build": "npm run clean && BABEL_ENV=production webpack --mode production",
+    "stats": "webpack --profile --json > stats.json",
+    "dev": "webpack-dev-server",
+    "clean": "rimraf dist",
+    "example:nodejs": "cd examples && npm run nodejs"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-4",
+    "webpack 4",
+    "webpack 4 (legato)",
+    "demo",
+    "react",
+    "node",
+    "sass",
+    "html"
+  ],
+  "author": "Kuku",
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
+    "inline-manifest-webpack-plugin": "^4.0.1",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.6",
+    "resolve-url-loader": "^2.3.0",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.11.0",
+    "webpack-cli": "^3.0.2",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "reformat-number": "1.0.0"
+  }
+}

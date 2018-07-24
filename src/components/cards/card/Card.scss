@@ -1,0 +1,29 @@
+@import '~styles/palette.scss';
+@import '~styles/mixins.scss';
+
+.container {
+    background: $lightblue;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    & > h2 {
+        @include responsive-font(16px, 20);
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 8px $darkblue;
+        margin: 0.6em 0;
+    }
+
+    & .description {
+        padding: 8px;
+        @include responsive-font(12px, 20);
+    }
+}
